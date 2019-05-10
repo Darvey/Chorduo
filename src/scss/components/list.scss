@@ -1,0 +1,56 @@
+
+.list {
+
+	&-title {
+		font-size: 1.6rem;
+		color: #FFF;
+		padding-bottom: 20px;
+		font-weight: 300;
+	}
+
+	&-item {
+		display: flex;
+		padding-bottom: 20px;
+
+		&-icon {
+			color: rgba(255,255,255,.3);
+			font-size: 1.4rem;
+			width: 25px;
+		}
+
+		&-number {
+			color: #979CA4;
+			font-size: 1.4rem;
+			width: 30px;
+			font-family: serif;
+			padding-top: 1px;
+		}
+
+		&-content {
+			flex: 1;
+		}
+
+		&-name {
+			font-size: 1.4rem;
+			color: #B3B6BE;
+			padding-bottom: 6px;
+		}
+
+		&-notes {
+			display: flex;
+			font-size: 1.1rem;
+			color: #73767E;
+		}
+
+		&-note {
+			padding-right: 4px;
+		}
+	}
+
+	&-noresult {
+		color: rgba(255,255,255,.5);
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+}
+

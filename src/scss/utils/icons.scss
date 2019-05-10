@@ -1,0 +1,109 @@
+
+$icomoon-font-path: "assets/fonts";
+
+@font-face {
+	font-family: 'chorduo';
+	src:
+		url('#{$icomoon-font-path}/chorduo.ttf?15cbw3') format('truetype'),
+		url('#{$icomoon-font-path}/chorduo.woff?15cbw3') format('woff'),
+		url('#{$icomoon-font-path}/chorduo.svg?15cbw3#chorduo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'chorduo' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-part {
+	&:before {
+		content: "\e905";
+	}
+}
+.icon-edit {
+	&:before {
+		content: "\e900";
+	}
+}
+.icon-library {
+	&:before {
+		content: "\e901";
+	}
+}
+.icon-menu {
+	&:before {
+		content: "\e902";
+	}
+}
+.icon-palette {
+	&:before {
+		content: "\e903";
+	}
+}
+.icon-search {
+	&:before {
+		content: "\e904";
+	}
+}
+.icon-volume:before {
+	content: "\ea27";
+}
+
+
+
+
+.icon-arrow {
+	display: inline-block;
+
+	&::before {
+		content: '';
+		font-size: 1.2rem;
+		display: block;
+		width: 1em;
+		height: 1em;
+		color: rgba(255,255,255,.5);
+		border-left: 1px solid currentColor;
+		border-top: 1px solid currentColor;
+		transform: translate(0, 20%) rotate(45deg);
+		transition: color .3s ease;
+	}
+
+	&:hover::before {
+		color: rgba(255,255,255,.8);
+	}
+}
+
+.icon-close {
+	display: inline-block;
+	position: relative;
+	width: 1em;
+	height: 1em;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 1em;
+		height: .1em;
+		background-color: currentColor;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+	&::after {
+		transform: rotate(-45deg);
+	}
+}
